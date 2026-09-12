@@ -1,0 +1,28 @@
+{
+  "name": "devpath",
+  "version": "1.0.0",
+  "description": "Curated developer resources and an AI-assisted learning planner",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "node --experimental-strip-types --test --test-isolation=none tests/planner.test.ts"
+  },
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "lucide-react": "^1.45.0",
+    "next": "^16.3.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
